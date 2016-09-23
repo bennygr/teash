@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "                                          "
+echo "▄▄▄█████▓▓█████ ▄▄▄        ██████  ██░ ██ "
+echo "▓  ██▒ ▓▒▓█   ▀▒████▄    ▒██    ▒ ▓██░ ██▒"
+echo "▒ ▓██░ ▒░▒███  ▒██  ▀█▄  ░ ▓██▄   ▒██▀▀██░"
+echo "░ ▓██▓ ░ ▒▓█  ▄░██▄▄▄▄██   ▒   ██▒░▓█ ░██ "
+echo "  ▒██▒ ░ ░▒████▒▓█   ▓██▒▒██████▒▒░▓█▒░██▓"
+echo "  ▒ ░░   ░░ ▒░ ░▒▒   ▓▒█░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒"
+echo "    ░     ░ ░  ░ ▒   ▒▒ ░░ ░▒  ░ ░ ▒ ░▒░ ░"
+echo "  ░         ░    ░   ▒   ░  ░  ░   ░  ░░ ░"
+echo "            ░  ░     ░  ░      ░   ░  ░  ░"
+echo " - a simple tea timer for your shell      "
+echo "                                          "
+echo -n "How long to draw (minutes)? [ENTER]:   "
+read selection
+echo zZzZZZzz $selection minutes
+time=$(($selection * 60))
+$(STEEP=$time; sleep $time; xmessage "Your tea is done") &
