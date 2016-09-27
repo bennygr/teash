@@ -11,6 +11,8 @@ echo "  ░         ░    ░   ▒   ░  ░  ░   ░  ░░ ░"
 echo "            ░  ░     ░  ░      ░   ░  ░  ░"
 echo " - a simple tea timer for your shell      "
 echo "                                          "
+echo " Earl Grey: 3-5 minutes                   "
+echo "                                          "
 echo -n "How long to draw (minutes)? [ENTER]:   "
 read selection
 echo zZzZZZzz $selection minutes
